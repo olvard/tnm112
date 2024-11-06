@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+
+% Latex packages
+\usepackage{graphicx}
+\usepackage{datetime}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Define some colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+
+% Typesetting of code sections
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolor},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+% User defined macros
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+\newcommand{\eqnref}[1]{Equation~\ref{eqn:#1}}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\tabref}[1]{Table~\ref{tab:#1}}
+
+\title{
+	\baselineskip 12pt
+	\textsc{
+		Peer-review -- TNM112\\
+		\small{Deep learning for media technology, Lab X}
+	}
+}
+\author{Author Name (liuid)\\
+\small{Peer-review on report by: Student Name (liuid)}}
+
+\date{\small\today\ (\currenttime)}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+You can use this template for writing the peer-reviews of lab reports. The peer-review is supposed to give constructive feedback on the lab report you are reviewing. It could be kept short and concise (around 2-3 pages), focusing on the strengths and weaknesses you see when reading the report. The purpose of the peer-review is to:
+\begin{enumerate}
+	\item Learn the content of the lab in more depth by seeing how the assignment has been solved from the perspective of other students.
+	\item Practice providing constructive feedback on other students' work.
+	\item Get constructive feedback to learn how your writing and presentation can be improved.
+\end{enumerate}
+
+\noindent The introduction should give a very short summary of the intent of this review. You should also provide a short summary of the report you are reviewing. Since you have worked on the same topic, this could be kept short, focusing on how the report is presented.
+
+\section{Review}
+Provide some short comments for the topics listed below. For each topic, try to formulate some strengths that you can see and some feedback on what you think could be improved.
+
+\subsection*{Overall structure}
+How is the overall structure and organization of the report? Is it easy to follow, or could it be improved by organizing the content differently?
+
+\subsection*{Method}
+Are the methods used described with enough detail? Are there factual errors? Does the text indicate that the author has understood the content and concepts used in the lab?
+
+\subsection*{Results}
+Are the results reasonable, or are there things that you see should be updated or added to show that the tasks have been solved? Are the results presented in a way that is easy to comprehend, or could the presentation be improved? 
+
+\subsection*{Clarity}
+Has the report provided explanations and discussions in a clear way? Are there formulations that are difficult to follow?
+
+\subsection*{Coverage}
+Is the report explaining around all the important aspects of the lab, or are there things that should be added to demonstrate that the content of the lab has been covered?
+
+\subsection*{Other comments}
+Do you have additional comments in addition to the topics above?
+
+\section{Conclusion}
+A short conclusion and general assessment based on your comments in the previous section.
+
+\end{document}
